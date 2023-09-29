@@ -1,0 +1,22 @@
+@media all and (max-width: 968px){
+  .navbar .list-items{
+    margin-right: 0;
+    float: left;
+  }
+
+  .navbar .site-name{
+    padding-left: 30px;
+    width: 100vw;
+  }
+
+  .navbar .list-items .items{
+    display: block;
+    width: 100vw;
+    margin-left: 0;
+  }
+  
+  .navbar .list-items .dropdown-items{
+    top: 70px;
+    position: static;
+  }
+} 
