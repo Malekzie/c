@@ -1,4 +1,4 @@
-@media all and (max-width: 968px){
+@media all and (max-width: 700px){
   .navbar .list-items{
     margin-right: 0;
     float: left;
@@ -9,14 +9,53 @@
     width: 100vw;
   }
 
-  .navbar .list-items .items{
+  .navbar .list-items .items,
+  .navbar .list-items .dropdown-items .dropdown-list{
     display: block;
     width: 100vw;
-    margin-left: 0;
   }
   
+  /* Sets layout of mobile navbar */
   .navbar .list-items .dropdown-items{
     top: 70px;
     position: static;
+    border-top: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
   }
-} 
+
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .show:hover{
+    color: cyan;
+  }
+
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show + a, .list-items{
+    display: none;
+  }
+
+  [id^=btn]:checked + .list-items{
+    display: block;
+  }
+}
