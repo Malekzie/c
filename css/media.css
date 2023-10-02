@@ -56,7 +56,12 @@
     display: none;
   }
 
-  [id^=btn]:checked + .list-items{
+  #btn-nav:checked + .list-items,
+  #btn-moto:checked + .dropdown-items,
+  #btn-gear:checked + .dropdown-items,
+  #btn-acc:checked + .dropdown-items
+  {
     display: block;
   }
+
 }
