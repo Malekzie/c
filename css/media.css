@@ -64,4 +64,81 @@
     display: block;
   }
 
+  /* Moto Section Styles */
+
+  .zoomies{
+    grid-row: 1;
+    grid-column: 2 / 4 ;
+  }
+  .moto-moto{
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+  }
+
+  .old-men{
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .traveler{
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+  .fast-travel{
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  .enduro{
+    grid-row: 4;
+    grid-column: 3;
+  }
+  
+  .off-roady{
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .elderly{
+    grid-row: 5;
+    grid-column: 3;
+  }
+
+  /* Gear Styles */
+
+  .gear-items{
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gear-head{
+    grid-column: 1 / 7;
+    box-sizing: border-box;
+    background: linear-gradient(red, black);
+    color: white;
+  }
+
+  .moto-helm{
+    grid-area: 2 / 3;
+  }
+
+  .moto-glove{
+    grid-area: 2/ 4;
+  }
+
+  .moto-jack{
+    grid-area: 3/3;
+  }
+
+  .moto-pant{
+    grid-area: 3/4;
+  }
+  .moto-boot{
+    grid-area: 4 / 3;
+  }
+
+  .ad{
+    grid-row: 5;
+    grid-column: 1 / span 6;
+  }
 }
