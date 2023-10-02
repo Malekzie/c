@@ -1,0 +1,38 @@
+/* Accessory Content Styles */
+
+.accessory-content{
+  height: 100vh;
+}
+
+.accessory-items{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 10rem 3fr 10rem;
+  gap: 2rem;
+}
+
+.elect{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.luggs{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.comms{
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.maint{
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.more{
+  grid-row: 3;
+  grid-column: 2 / span 4;
+  text-align: center;
+}

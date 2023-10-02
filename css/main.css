@@ -5,90 +5,6 @@
   list-style: none;
 }
 
-/* Nav Styles */
-.navbar{
-  background-color: #000000e7;
-  color: white
-}
-
-.navbar:after{
-  content: ' ';
-  clear: both;
-  display: table;
-}
-
-/* Site Name style */
-
-.navbar .site-name{
-  float: left;
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 70px;
-  padding-left: 60px;
-}
-
-/* Navbar List */
-.navbar .list-items{
-  float: right;
-  margin-right: 40px;
-  position: relative;
-}
-
-.navbar .list-items li{
-  float: left;
-  display: inline-block;
-  background: black;
-  margin: 0 5px;
-}
-
-.navbar .list-items li .dropdown{
-  color: white;
-  text-decoration: 70px;
-  line-height: 70px;
-  font-size: 18px;
-  padding: 8px 15px;
-}
-
-.navbar .list-items .dropdown:hover{
-  color: cyan;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #33ffff,
-              0 0 5px #66ffff;
-} 
-
-.navbar .list-items .dropdown-items .dropdown-list a:hover{
-  color: cyan;
-}
-
-.navbar .list-items .dropdown-items{
-  position: absolute;
-  border-top: 3px solid cyan;
-  top: 90px;
-  opacity: 0;
-  visibility: hidden;
-  transition: top .3s;
-}
-
-.navbar .list-items .items:hover > .dropdown-items{
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.navbar .list-items .dropdown-items .dropdown-list{
-  position: relative;
-  margin: 0px;  
-  width: 150px;
-  float: none;
-  display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
-  padding: 1rem;
-}
-
-.show, .icon, input{
-  display: none;
-}
-
 /* Main Section Styles */
 main{
   height: 100vh;
@@ -106,6 +22,7 @@ main{
   grid-template-rows: repeat(5, 1fr);
   color: white;
   height: inherit;
+  text-align: center;
 }
 
 .hero-item{
@@ -153,110 +70,6 @@ main{
   transition: .3s ease-in-out;
 }
 
-
-/* Motorcycles section */
-
-.moto-moto{
+.parts{
   height: 100vh;
-  display: grid;
-  grid-template-columns: 8rem repeat(3, 1fr) 8rem;
-  grid-template-rows: 8rem repeat(3, 1fr) 8rem;
-  box-sizing: border-box;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  border: 1px solid red;
-}
-
-/* Layout for Motorcycle section */
-
-
-.stand{
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.sporty{
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.old-men{
-  grid-column: 4;
-  grid-row: 2;
-}
-
-.traveler{
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.fast-travel{
-  grid-column: 3;
-  grid-row: 3;
-}
-
-.enduro{
-  grid-column: 4;
-  grid-row: 3;
-}
-
-.off-roady{
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.elderly{
-  grid-column: 3;
-  grid-row: 4;
-}
-
-.zoomies{
-  grid-column: 4;
-  grid-row: 4;
-}
-
-/* Gear Content Styles */
-
-.gear-content{
-  height: 100vh;
-}
-
-.gear-items{
-  display: grid;
-  grid-template-columns: 1fr repeat(5, 4rem) 1fr;
-  grid-row: 1fr 3fr 1fr;
-  height: inherit;
-}
-
-.moto-helm{
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.moto-glove{
-  grid-column: 3;
-  grid-row: 2;
-}
-.moto-jack{
-  grid-column: 4;
-  grid-row: 2;
-}
-.moto-pant{
-  grid-column: 5;
-  grid-row: 2;
-}
-.moto-boot{
-  grid-column: 6;
-  grid-row: 2;
-}
-
-/* Accessory Content Styles */
-
-.accessory-content{
-  height: 100vh;
-}
-
-.accessory-items{
-  display: grid;
 }
