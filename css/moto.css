@@ -3,13 +3,13 @@
 .moto-moto{
   height: 100vh;
   display: grid;
-  grid-template-columns: 8rem repeat(3, 1fr) 8rem;
-  grid-template-rows: 8rem repeat(3, 1fr) 8rem;
+  grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+  grid-template-rows: 1fr repeat(3, 3fr) 1fr;
   box-sizing: border-box;
   align-items: center;
   text-align: center;
-  gap: 1rem;
-  border: 1px solid red;
+  gap: 1.5rem;
+  box-sizing: border-box;
 }
 
 /* Layout for Motorcycle section */
@@ -18,47 +18,157 @@
 .stand{
   grid-column: 2;
   grid-row: 2;
+  width: 100%;
+  height: 100%;
+  /* Background Image */
+  background-image: url(../images/Moto/standard.jpg);
+  background-color: rgba(128, 128, 128, 0.356);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
 }
 
 /* Sport Div */
 .sporty{
   grid-column: 3;
   grid-row: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/sport.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 
 /* Cruiser Div */
 .old-men{
   grid-column: 4;
   grid-row: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/cruiser.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 
 /* Touring Div */
 .traveler{
   grid-column: 2;
   grid-row: 3;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/touring.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.3560);
 }
+
 /* Sport Touring Div */
 .fast-travel{
   grid-column: 3;
   grid-row: 3;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/sport-touring.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 /* Enduro Div */
 .enduro{
   grid-column: 4;
   grid-row: 3;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/enduro.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 /* Off Road Div */
 .off-roady{
   grid-column: 2;
   grid-row: 4;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/off-road.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 /* Moped Div */
 .elderly{
   grid-column: 3;
   grid-row: 4;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/moped.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
 }
 /* Electric Div */
 .zoomies{
   grid-column: 4;
   grid-row: 4;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/Moto/electric.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.356);
+}
+
+
+/* Hover Effects */
+.stand:hover,
+.sporty:hover,
+.old-men:hover,
+.traveler:hover,
+.fast-travel:hover,
+.enduro:hover,
+.off-roady:hover,
+.old-men:hover,
+.elderly:hover,
+.zoomies:hover{
+  width: 95%;
+  left: 20px;
+  height: 95%;
 }
