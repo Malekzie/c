@@ -6,7 +6,7 @@
 
 .gear-items{
   display: grid;
-  grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+  grid-template-columns: 1fr repeat(5, 3fr) 1fr;
   grid-row: 1fr 3fr 1fr;
   height: inherit;
   box-sizing: border-box;
