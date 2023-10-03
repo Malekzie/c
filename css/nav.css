@@ -39,7 +39,7 @@
 
 .navbar .list-items .dropdown-items{
   position: absolute;
-  border-top: 3px solid cyan;
+  border-top: 3px solid var(--text-color);
   top: 90px;
   opacity: 0;
   visibility: hidden;

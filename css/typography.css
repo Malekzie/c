@@ -1,3 +1,86 @@
-body{
-  font-family: Arial, Helvetica, sans-serif
+:root{
+  /* Typography */
+  --text-color: #fde4c3;
+  --card-color: #302a18;
+  --card-faded: #302a1875;
+  --second-card: #1c1c1c;
+  --second-text: #f6f6f6;
+
+}
+
+/* Nav Color */
+.navbar{
+  background-color:var(--second-card);
+}
+
+/* Site name and Nav Options text Color */
+.navbar .site-name,
+.dropdown{
+  color: var(--text-color);
+}
+
+/* Nav Dropdown Color */
+.navbar .list-items .dropdown-items .dropdown-list a{
+  color: var(--text-color)
+}
+
+.navbar .list-items li{
+  background: var(--second-card);
+}
+
+.navbar .list-items .dropdown:hover{
+  color: var(--second-text);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--text-color),
+              0 0 5px var(--second-text);
+} 
+
+/* Nav Dropdown Hover */
+.navbar .list-items .dropdown-items .dropdown-list a:hover{
+  color: var(--second-text);
+  box-shadow: 0 0 5px var(--text-color),
+              0 0 5px var(--second-text);
+}
+
+/* CTA Text Color */
+.cta1, .cta2{
+  color: var(--second-text)
+}
+
+/* Motorcycle Section Typography styles */
+
+.stand,
+.sporty,
+.traveler,
+.fast-travel,
+.old-men,
+.enduro,
+.off-roady,
+.elderly,
+.zoomies{
+ font-family: 'Fanwood Text', serif;
+}
+
+
+/* Gear Section Typography Styles */
+
+.gear-head{
+  font-family: 'Quattrocento', serif;
+  color: var(--text-color);
+  box-sizing: border-box;
+  background-color: var(--card-faded);
+}
+
+.moto-helm,
+.moto-glove,
+.moto-jack,
+.moto-pant,
+.moto-boot{
+  font-family: 'Fanwood Text', serif;
+  font-weight: 800;
+}
+
+.ad a{
+  color: var(--text-color);
+  font-size: 22px;
 }

@@ -70,6 +70,48 @@ main{
   transition: .3s ease-in-out;
 }
 
-.parts{
-  height: 100vh;
+/* Footer Section Styles */
+footer{
+  bottom: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(var(--card-color), var(--second-card));
+  color: var(--text-color);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 4rem;
+  grid-template-rows: repeat(3, 10rem);
+  gap: 2rem;
+}
+
+.contacts{
+  grid-row: 1;
+  line-height: 1.7rem;
+  align-content: center;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.operation-hours{
+  grid-row: 2;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.location{
+  grid-column: 2 / span 2;
+  text-align: center;
+}
+
+.social-icons{
+  grid-row: 3;
+  text-align: center;
+  align-self: center;
+  font-size: 22px;
+  justify-self: stretch;
+}
+
+.copyright{
+  padding: 10px;
+  border-top: 3px solid var(--text-color);
+  grid-row: 4;
+  grid-column: 1 / span 4;
+  text-align: center;
 }
